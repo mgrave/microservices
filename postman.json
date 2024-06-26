@@ -1,0 +1,86 @@
+{
+  "info": {
+    "name": "Microservices Collection",
+    "_postman_id": "unique-id",
+    "description": "Collection for testing microservices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "API Gateway",
+      "item": [
+        {
+          "name": "Get all routes",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/routes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["routes"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Inventory Service",
+      "item": [
+        {
+          "name": "Get all inventory items",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8081/inventory",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8081",
+              "path": ["inventory"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orders Service",
+      "item": [
+        {
+          "name": "Get all orders",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/orders",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8082",
+              "path": ["orders"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Products Service",
+      "item": [
+        {
+          "name": "Get all products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8083/products",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8083",
+              "path": ["products"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
